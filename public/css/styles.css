@@ -1,0 +1,121 @@
+
+body{
+  background-color: black;
+
+}
+h1{
+  color: white;
+}
+
+
+/* home ******************* */
+.text{
+  text-align: center;
+  margin: 100px auto;
+  width: 70%;
+}
+#carousel-index{
+  width: 40%;
+  margin: auto;
+}
+
+.button-index-prev{
+  position: absolute;
+left: -30px;
+}
+.button-index-next{
+  position: absolute;
+right: -30px;
+}
+form{
+  width:25%;
+  margin: auto;
+
+}
+
+label{
+color: white;
+}
+.btn{
+  margin-top: 20px;
+
+}
+/* image ********************* */
+#image-carousel{
+  width:30%;
+  height: 30%;
+  margin:150px auto;
+}
+
+/* docs ********************* */
+h3{
+  display: inline-block;
+}
+.faq{
+  position: absolute;
+  right:25%;
+  top:30%;
+  width:50%;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+
+}
+.answer{
+  display: none;
+}
+p{
+  display: inline-block;
+}
+
+.img-rotate{
+  transform: rotate(180deg);
+}
+
+
+.arrow-icon1{
+  position: relative;
+  right:20px;
+}
+.arrow-icon2{
+  position: relative;
+  left:20px;
+}
+
+
+.error{
+  width: 30%;
+  margin: 150px auto;
+}
+
+i{
+  position: absolute;
+  right:20px;
+}
+
+@media (max-width:978px) {
+
+
+.faq{
+  width:90%;
+  left:6%;
+  overflow-x: scroll;
+}
+form{
+  width:40%;
+}
+ }
+
+ @media (max-width:550px) {
+ table{
+   font-size: 0.75rem;
+ }
+ #image-carousel{
+   width:50%;
+ }
+
+ #carousel-index{
+   width:50%;
+ }
+
+ }

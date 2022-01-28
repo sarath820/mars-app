@@ -1,0 +1,49 @@
+  <%- include('header'); -%>
+
+
+
+      <div class="text">
+        <div id="carousel-index" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner ">
+    <div class="carousel-item active">
+      <h1 class="d-block w-100">To see the photos of mars fill the below inputs and search.
+    </div>
+    <div class="carousel-item">
+      <h1 class="d-block w-100"> To know what to enter in those input headover to docs page
+    </div>
+
+  </div>
+  <button class="carousel-control-prev button-index-prev" type="button" data-bs-target="#carousel-index" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next button-index-next" type="button" data-bs-target="#carousel-index" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+      </div>
+
+
+
+
+   <form  action="/" method="post">
+     <div class="mb-3">
+       <label for="formGroupExampleInput2" class="form-label">Rover</label>
+       <input type="text" class="form-control" id="formGroupExampleInput2" name="rover" autocomplete="off">
+     </div>
+     <div class="mb-3">
+   <label for="formGroupExampleInput" class="form-label">Sol</label>
+   <input type="text" class="form-control" id="formGroupExampleInput" name="sol" autocomplete="off" >
+ </div>
+ <div class="mb-3">
+   <label for="formGroupExampleInput2" class="form-label">Camera</label>
+   <input type="text" class="form-control" id="formGroupExampleInput2" name="camera" autocomplete="off">
+ </div>
+
+ <button type="submit" name="button" class="btn btn-dark btn-lg">Search</button>
+   </form>
+
+
+  <%- include('footer'); -%>
+<!-- <a href="https://www.vectorstock.com/royalty-free-vector/night-sky-pattern-vector-5098438">Night sky pattern vector by ne2pi</a> -->

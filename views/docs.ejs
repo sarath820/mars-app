@@ -1,0 +1,58 @@
+<%- include('header'); -%>
+<div class="faq">
+<h3>what should I enter in rover?  <i class="fas fa-sort-down one"></i></h3>
+<div class="answer answer-1 ">
+  <p >You have to enter name of the mars rover.There are three mars rovers namely curiosity,oppurtunity,spirit.Enter anyone of this rover</p>
+
+</div>
+<hr>
+<h3>what is sol? <i class="fas fa-sort-down"></i></h3>
+<div class="answer answer-2">
+  <p >Sol is also called as martian day,its equivalent to day in earth.For mars rover sol is counted up from it's landing date,so if you want to see
+  the picture of mars that was taken on 1000th day from landing enter 1000 in sol section</p>
+  <p>spirit: o - 2208 sols,opportunity:0 - 5111, curiosity:0-<%=maxsol%> these are minimum and maximum sol for each rover </p>
+</div>
+<hr>
+<h3>what should I enter in camera? <i class="fas fa-sort-down "></i></h3>
+<div class="answer answer-3">
+  <p>You have to enter the name of the camera that mars rover used to take photos.There are 9 cameras are used,but not all rovers had all cameras,to
+  know which rover have which camera see below table</p>
+
+  <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Abbreviation</th>
+      <th scope="col">Camera</th>
+      <th scope="col">curiosity</th>
+      <th scope="col">opportunity</th>
+      <th scope="col">spirit</th>
+    </tr>
+  </thead>
+  <tbody>
+
+
+  <%  for (var i = 0; i < Abbreviation.length; i++) { %>
+      <tr>
+
+        <td> <%= Abbreviation[i] %></td>
+        <td><%= camera[i] %></td>
+        <td><%= curiosity[i] %></td>
+        <td><%= opportunity[i] %></td>
+        <td><%= spirit[i] %></td>
+      </tr>
+<%    } %>
+
+
+  </tbody>
+</table>
+</div>
+
+<hr>
+<h3>What will happen if I left a box empty ?<i class="fas fa-sort-down "></i></h3>
+<div class="answer answer-4">
+  <p>If you left sol or rover or both boxes empty you won't get images,but if you only left camera box empty then you will get all the images that was taken by each camera on the sol you mentioned </p>
+
+</div>
+</div>
+
+<%- include('footer'); -%>

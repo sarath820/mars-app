@@ -1,0 +1,37 @@
+<%- include("header"); -%>
+
+<div id="image-carousel" class="carousel carousel-danger slide" data-bs-ride="carousel" data-bs-interval="false">
+  <div class="carousel-inner">
+    <div class="carousel-item active img2">
+      <img  class="d-block w-100" src=<%= imgsource[0].img_src%>  alt="mars-image">
+      <div class="carousel-caption d-block">
+       <h5>1/<%= imgsource.length %></h5>
+      </div>
+    </div>
+   <% let datano = 2 %>
+  <%  for (var i = 1; i < imgsource.length; i++) { %>
+
+    <div class="carousel-item img2">
+      <img  class="d-block w-100" src=<%= imgsource[i].img_src %>  alt="mars-image">
+      <div class="carousel-caption  d-block">
+
+         <h5> <%- datano%>/<%=imgsource.length%></h5>
+
+          <%datano++%>
+      </div>
+    </div>
+
+  <%  } %>
+
+  </div>
+  <button class="carousel-control-prev button-index-prev" type="button" data-bs-target="#image-carousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon arrow-icon1" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next button-index-next" type="button" data-bs-target="#image-carousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon arrow-icon2" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<%- include("footer");   -%>
