@@ -79,8 +79,9 @@ app.get("/docs",function(req,res){
 });
 
 let Port = process.env.PORT;
-if (Port =""|| Port == null)
+if (Port == null|| Port == "")
 Port = 3000;
-});
+}
 app.listen(Port, function() {
   console.log("working");
+});
