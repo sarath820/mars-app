@@ -4,15 +4,16 @@
   "description": "test",
   "main": "app.js",
   "scripts": {
-    "start":"node app.js"
+    "start": "node app.js"
   },
   "author": "sarath",
   "license": "ISC",
-  "engines":{
-    "node":"16.13.1"
+  "engines": {
+    "node": "16.13.1"
   },
   "dependencies": {
     "ejs": "^3.1.6",
-    "express": "^4.17.2"
+    "express": "^4.17.2",
+    "ngrok": "^4.3.3"
   }
 }

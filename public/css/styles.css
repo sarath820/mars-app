@@ -1,23 +1,32 @@
 
 body{
-  background-color: black;
+  background-color: hsl(222, 26%, 31%);
 
 }
 h1{
   color: white;
 }
+nav,.btn,.carousel-control-prev-icon,.carousel-control-next-icon,hr,i{
+  background-color: #FF3526;
+}
 
+.btn,.carousel-content,label,.question,.answer-para,th,td{
+  color:white;
+}
+ .nav-link{
+  color:gray;
+}
 
 /* home ******************* */
 .text{
+  
+  width: 40%;
   text-align: center;
   margin: 100px auto;
-  width: 70%;
+  position: relative;
+  bottom: 50px;
 }
-#carousel-index{
-  width: 40%;
-  margin: auto;
-}
+
 
 .button-index-prev{
   position: absolute;
@@ -28,17 +37,17 @@ left: -30px;
 right: -30px;
 }
 form{
-  width:25%;
+  width:40%;
   margin: auto;
-
-}
+  position: relative;
+  bottom:90px;
+  }
 
 label{
-color: white;
+font-weight: bold;
 }
 .btn{
   margin-top: 20px;
-
 }
 /* image ********************* */
 #image-carousel{
@@ -48,24 +57,31 @@ color: white;
 }
 
 /* docs ********************* */
-h3{
+.question{
+  display: inline-block;
+ 
+}
+.answer-para{
+  
   display: inline-block;
 }
+
+th{
+  color: white;
+}
+
 .faq{
   position: absolute;
   right:25%;
   top:30%;
   width:50%;
-  background-color: white;
+  
   border-radius: 10px;
   padding: 20px;
 
 }
 .answer{
   display: none;
-}
-p{
-  display: inline-block;
 }
 
 .img-rotate{
@@ -91,31 +107,26 @@ p{
 i{
   position: absolute;
   right:20px;
+  background-color: hsl(222, 26%, 31%);
 }
 
-@media (max-width:978px) {
+@media screen and (max-width:750px) {
+  table{
+    font-size: 0.75rem;
+  }
+  #image-carousel{
+    width:50%;
+  }
+ 
 
-
-.faq{
-  width:90%;
-  left:6%;
-  overflow-x: scroll;
-}
-form{
-  width:40%;
-}
+ form{
+   width:80%;
  }
 
- @media (max-width:550px) {
- table{
-   font-size: 0.75rem;
+ .text{
+  width:70%;
  }
- #image-carousel{
-   width:50%;
- }
+  }
+ 
 
- #carousel-index{
-   width:50%;
- }
-
- }
+ 
